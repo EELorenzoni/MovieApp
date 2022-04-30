@@ -57,9 +57,10 @@ class MovieEntity(
     val movie_type: String = ""
 )
 
-fun List<MovieEntity>.toMovieList() {
+fun List<MovieEntity>.toMovieList(): MovieList {
     val resultList = mutableListOf<Movie>()
     this.forEach { movieEntity -> resultList.add(movieEntity.toMovie()) }
+    return MovieList(resultList)
 }
 
 fun MovieEntity.toMovie(): Movie = Movie(
@@ -80,3 +81,19 @@ fun MovieEntity.toMovie(): Movie = Movie(
 )
 
 
+fun Movie.toMovieEntity(movie_type: String): MovieEntity = MovieEntity(
+    this.id,
+    this.adult,
+    this.backdrop_path,
+    this.original_title,
+    this.original_languague,
+    this.overview,
+    this.popularity,
+    this.poster_path,
+    this.release_date,
+    this.title,
+    this.video,
+    this.vote_average,
+    this.vote_count,
+    movie_type = movie_type
+)

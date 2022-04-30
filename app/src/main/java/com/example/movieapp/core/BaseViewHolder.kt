@@ -1,4 +1,4 @@
-package com.example.movieapp.application
+package com.example.movieapp.core
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

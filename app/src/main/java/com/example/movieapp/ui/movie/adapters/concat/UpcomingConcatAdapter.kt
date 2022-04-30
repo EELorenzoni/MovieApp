@@ -3,7 +3,7 @@ package com.example.movieapp.ui.movie.adapters.concat
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.movieapp.application.BaseConcatHolder
+import com.example.movieapp.core.BaseConcatHolder
 import com.example.movieapp.databinding.UpcomingMovieRowBinding
 import com.example.movieapp.ui.movie.adapters.MovieAdapter
 
